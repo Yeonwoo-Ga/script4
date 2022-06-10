@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="height">
+    <button onclick="insert()">클릭</button>
+    <p id="result"></p>
+    <script>
+        
+        function insert(){
+            const weight = document.querySelector("#height").value - 105;
+            document.querySelector("#result").innerHTML = weight;
+         
+        }
+
+        
+
+    </script>
+</body>
+</html>

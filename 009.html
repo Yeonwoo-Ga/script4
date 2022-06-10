@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="kor">국어</label>
+    <input type="text" id="kor">
+    <label for="eng">영어</label>
+    <input type="text" id="eng">
+    <label for="result">결과</label>
+    <input type="text" id="result" disabled>
+    <button onclick="result();">결과</button>
+
+    <script>
+
+        function result(){
+            const korEl = document.querySelector("#kor");
+            const engEl = document.querySelector("#eng");
+            const res = document.querySelector("#result");
+            const kor = parseInt(korEl.value);
+            const eng = parseInt(engEl.value);
+            const cal = (kor + eng)/2;
+
+            const calc = parseInt(cal);
+
+            let result;
+            if(calc>=90){
+                result = "우수";
+            }
+                else if(calc>=70) {
+                result = "통과";
+            }   else {
+                result = "재시험";
+            }
+
+            res.value = result;
+        }
+    </script>
+</body>
+</html>
