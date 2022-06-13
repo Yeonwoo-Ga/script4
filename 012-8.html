@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+        const valueInput = document.querySelector("#value");
+        const even = document.querySelector("#even");
+        const square = document.querySelector("#square");
+        
+        cal.onclick = function(){
+            const valueInput = document.querySelector("#value").value;
+            const value = parseInt(valueInput);
+            const even = value%2===0 ? "짝수" : "홀수";
+            console.log(even);
+            document.querySelector("#even").innerHTML = even;
+            alert(even)
+            const square = value*value;
+            console.log(square);
+            document.querySelector("#square").innerHTML = square;
+            alert(square);
+        }
+    }
+
+        
+    </script>
+</head>
+<body>
+    값 : <input type="text" id="value">
+    <button id="cal">계산</button>
+    짝수여부 : <span id="even"></span><br>
+    제곱값 : <span id="square"></span>
+
+</body>
+</html>

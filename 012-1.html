@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 10, b=20;
+        //증감연산자는 위치에 상관없이 변수를 증감시킨다.
+        //단, 다른 연산자와 함께 사용하면 전위는 증감부터, 후위는 다른연산부터(대입도 포함)
+        let c = a++;
+        let d = ++b;
+        //c에 a를 대입,d에 b를 대입하는데, a는 대입후 연산실행 b는 연산실행후 대입
+
+        console.log(a++); //11을 출력하고 a는 증가 출력은 11
+        console.log(++b); //증가한 다음 출력 22
+    </script>
+</body>
+</html>

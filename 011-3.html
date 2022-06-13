@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="target" >우리나라</p>
+
+    <script>
+        const p = document.querySelector("#target");
+        p.onclick = red;
+
+        function red(){
+            p.style.color = "red";
+        }
+
+        //이름을 생략해도 문제가 없다면 js는 생략 가능(익명 함수)
+
+        p.onmouseenter = function () {
+            p.style.backgroundColor = "yellow";
+        }
+
+    </script>
+</body>
+</html>
